@@ -35,7 +35,7 @@
   cursor:pointer;
 
 } */
-.student{
+/* .student{
   font-family:arial,sans-serif;
   font-size: 2em;
   padding:10px;
@@ -43,4 +43,46 @@
 }
 .student p{
   margin:0;
-}
+} */
+ .welcome-message{
+  font-size:2.5em;
+  background-color:rgb(255, 145, 0);
+  color:white;
+  padding:10px;
+  border-radius:5px;
+  margin:0;
+
+ }
+ .loggin-prompt{
+  font-size: 2.5em;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+
+ }
+ .list-category{
+  font-size:2.5em;
+  font-weight:bold;
+  color:rosybrown;
+  margin-bottom:10px;
+  text-align:center;
+  border:3px solid;
+  border-radius:5px;
+background-color: aqua;
+
+ }
+ .list-items li{
+  font-size:2em;
+  list-style:none;
+  color:red;
+  text-align:center;
+  margin:0;
+
+ }
+ .list.items li:hover{
+  color: blanchedalmond;
+ 
+  cursor:pointer;
+ }
