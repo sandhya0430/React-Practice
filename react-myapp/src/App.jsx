@@ -9,6 +9,11 @@ import './App.css';
 import UserGreeting from './components/UserGreeting.jsx';
 import List from './components/List.jsx';
 import Button from './components/Button.jsx';
+import ProfilePicture from './components/ProfilePicture.jsx';
+import Mycomponent from './components/Mycomponent.jsx';
+import Counter from './components/CounterApp.jsx';
+import Mycomponents from './components/MyComponentsOnChange.jsx';
+import ColorPicker from './components/ColorPicker.jsx';
 function App() {
     //  const fruits=[{id:1,name:"orange",calories:30},
     //     {id:2,name:"apple",calories:40},
@@ -47,7 +52,12 @@ function App() {
 
     {vegetables.length>0 ? <List items={vegetables} category="vegetables"/>:null} */}
 
-      <Button/> 
+      {/* <Button/>  */}
+      {/* <ProfilePicture/> */}
+      {/* <Mycomponent/> */}
+      {/* <Counter/> */}
+      {/* <Mycomponents/> */}
+      <ColorPicker/> 
     
     
     </>
@@ -94,3 +104,13 @@ export default App;
 //click event=an interaction when a user click on a specific element
 //we can respond to click by passing a callback to the onclick handler.
 
+//ReactHook=special functions that allow functional components
+//to use react features without writing class components
+//useState, useEffect,Usecontext,useCallback and more.
+
+//useState=hook that allows the creation of a stateful varaiable and a 
+//setter function to update its value in the virtual dom [name,setName]
+
+//onChange =event handler that is used primarily with form elements
+//ex <input>,<textarea>,<select> ,<radio>
+//triggers a function every time the value of the input chnages
