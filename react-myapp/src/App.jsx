@@ -14,6 +14,9 @@ import Mycomponent from './components/Mycomponent.jsx';
 import Counter from './components/CounterApp.jsx';
 import Mycomponents from './components/MyComponentsOnChange.jsx';
 import ColorPicker from './components/ColorPicker.jsx';
+import UpdateObject from './components/UpdateObject.jsx';
+import UpdateArrayState from './components/UpdateArrayState.jsx';
+import UpdateArrayOfOjectsInState from'./components/UpdateArrayOfOjectsInState.jsx';
 function App() {
     //  const fruits=[{id:1,name:"orange",calories:30},
     //     {id:2,name:"apple",calories:40},
@@ -57,7 +60,11 @@ function App() {
       {/* <Mycomponent/> */}
       {/* <Counter/> */}
       {/* <Mycomponents/> */}
-      <ColorPicker/> 
+      {/* <ColorPicker/>  */}
+      {/* <UpdateObject/> */}
+      <UpdateArrayState/>
+      <UpdateArrayOfOjectsInState/>
+
     
     
     </>
@@ -114,3 +121,10 @@ export default App;
 //onChange =event handler that is used primarily with form elements
 //ex <input>,<textarea>,<select> ,<radio>
 //triggers a function every time the value of the input chnages
+
+//updater function= a function as a an argument to setState() usually
+//ex setYear(year+1)
+//in his case(y=>y+1)
+//allow for safe updates based on the previous state
+//used with multiple state update and asynchronous functions
+//good practice to use updater functions
