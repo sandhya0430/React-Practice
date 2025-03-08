@@ -19,6 +19,7 @@ import UpdateArrayState from './components/UpdateArrayState.jsx';
 import UpdateArrayOfObjectsInState from './components/UpdateArrayOfObjectsInState.jsx';
 import TodoListApp from './components/TodoListApp.jsx';
  import UseEffect from './components/useEffect.jsx';
+ import ToggleVisibility from './components/ToggleVisibility.jsx';
 function App() {
     //  const fruits=[{id:1,name:"orange",calories:30},
     //     {id:2,name:"apple",calories:40},
@@ -68,6 +69,7 @@ function App() {
       {/* <UpdateArrayOfObjectsInState/> */}
       {/* <TodoListApp/> */}
       <UseEffect/>
+      {/* <ToggleVisibility/> */}
 
 
     
