@@ -16,7 +16,9 @@ import Mycomponents from './components/MyComponentsOnChange.jsx';
 import ColorPicker from './components/ColorPicker.jsx';
 import UpdateObject from './components/UpdateObject.jsx';
 import UpdateArrayState from './components/UpdateArrayState.jsx';
-import UpdateArrayOfOjectsInState from'./components/UpdateArrayOfOjectsInState.jsx';
+import UpdateArrayOfObjectsInState from './components/UpdateArrayOfObjectsInState.jsx';
+import TodoListApp from './components/TodoListApp.jsx';
+ import UseEffect from './components/useEffect.jsx';
 function App() {
     //  const fruits=[{id:1,name:"orange",calories:30},
     //     {id:2,name:"apple",calories:40},
@@ -62,8 +64,11 @@ function App() {
       {/* <Mycomponents/> */}
       {/* <ColorPicker/>  */}
       {/* <UpdateObject/> */}
-      <UpdateArrayState/>
-      <UpdateArrayOfOjectsInState/>
+      {/* <UpdateArrayState/> */}
+      {/* <UpdateArrayOfObjectsInState/> */}
+      {/* <TodoListApp/> */}
+      <UseEffect/>
+
 
     
     
@@ -75,12 +80,6 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
 
 // CSS
 // external
@@ -128,3 +127,20 @@ export default App;
 //allow for safe updates based on the previous state
 //used with multiple state update and asynchronous functions
 //good practice to use updater functions
+
+//useEffect()=React hook that tells react Do some code when(pick one):
+//this component re-renders
+//this component mounts
+//the state of a value
+
+//useEffect(function,[dependencies])
+//1.useEffect(()=>{})//runs after every re-render
+//2.useEffect(()=>{},[])//runs only on mount
+//3.useEffect(()=>{},[value])//runs on mount+when value changes
+
+//uses
+//event listeners
+//dom manipulation
+//subscription(real-time updates)
+//fetching Data from an api
+//clean up with a component unmounts
